@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>Grocery-list</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Type in your list</h1>
+      <div id="grocery">
+        <form>
+          <div class="form-group">
+            <label for="protein">protein</label>
+            <input id="protein" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="carb">carb</label>
+            <input id="carb" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="vegetable">vegetable</label>
+            <input id="vegetable" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="vegetable2">vegetable2</label>
+            <input id="vegetable2" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn">Here is the list</button>
+        </form>
+      </div>
+
+      <div id="groceryList">
+        <h1>grocery list</h1>
+        <p>
+          <ul>
+            <li><span class="groceryLists"></span></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
