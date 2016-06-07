@@ -1,18 +1,24 @@
 $(document).ready(function() {
-  $("#grocery form").submit(function(event) {
+  $("#blanks form").submit(function(event) {
 
-   var groceryLists = ["protein", "carb", "vegetable", "vegetable2"];
+    var blanks = ["item1", "item2", "item3", "item4", "item5"];
+    var newArray = [];
 
-   groceryLists.forEach(function(groceryLists) {
-     var userInput = $("input#" + groceryLists).val();
-     $("." + groceryLists).sort(userInput);
-         $(".groceryLists").text(userInput);
-     //   });
-     // });
+    blanks.forEach(function(blank) {
+      var userInput = $("input#" + blank).val();
+      newArray.push(userInput.toUpperCase());
+    });
 
-  //  $("#list").show(groceryLists);
+    var newArray = newArray.sort();
+
+    newArray.forEach(function(item) {
+      $(".items").append("<li>" + item + "</li>");
+    });
+
+    $("#grocery-list").show();
+    $("#blanks").hide();
+
    event.preventDefault();
 
   });
-});
 });

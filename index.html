@@ -8,37 +8,40 @@
   </head>
   <body>
     <div class="container">
-      <h1>Type in your list</h1>
-      <div id="grocery">
+      <h1>Fill in the blanks to create your grocery list!</h1>
+      <div id="blanks">
         <form>
           <div class="form-group">
-            <label for="protein">protein</label>
-            <input id="protein" class="form-control" type="text">
+            <label for="item1">Item 1:</label>
+            <input id="item1" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="carb">carb</label>
-            <input id="carb" class="form-control" type="text">
+            <label for="item2">Item 2:</label>
+            <input id="item2" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="vegetable">vegetable</label>
-            <input id="vegetable" class="form-control" type="text">
+            <label for="item3">item 3:</label>
+            <input id="item3" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="vegetable2">vegetable2</label>
-            <input id="vegetable2" class="form-control" type="text">
+            <label for="item4">Item 4:</label>
+            <input id="item4" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="item5">Item 5:</label>
+            <input id="item5" class="form-control" type="text">
           </div>
 
           <button type="submit" class="btn">Here is the list</button>
         </form>
       </div>
 
-      <div id="groceryList">
-        <h1>grocery list</h1>
-        <p>
-          <ul>
-            <li><span class="groceryLists"></span></li>
+      <div id="grocery-list">
+        <h1>Grocery List</h1>
+          <ul class="items">
+
           </ul>
-        </p>
       </div>
     </div>
     <script src="js/jquery-1.12.4.js"></script>
